@@ -1,0 +1,37 @@
+.Palestine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  width: 25vh;
+  height: 12vh;
+}
+.Palestine::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  border-left: 60px solid red;
+  border-top: 6vh solid transparent;
+  border-bottom: 6vh solid transparent;
+  border-radius: 10px;
+}
+.Palestine span {
+  width: 100%;
+  height: calc(12vh / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+.Palestine span:first-child {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+}
+.Palestine span:nth-child(2) {
+  background-color: white;
+}
+.Palestine span:nth-child(3) {
+  background-color: green;
+  border-radius: 0 0 10px 10px;
+}
